@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Lionel Messi</title>
+    
+    <!-- Bootstrap 5.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        .timeline-item {
+            border-left: 3px solid #75aadb;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: #75aadb;
+            border-radius: 50%;
+            position: absolute;
+            left: -9px;
+            top: 0;
+        }
+        
+        .timeline-year {
+            font-weight: bold;
+            color: #004d98;
+        }
+        
+        .gallery-img {
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        
+        section {
+            scroll-margin-top: 70px;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #004d98 0%, #a50044 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #004d98;
+        }
+        
+        .club-badge {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .trophy-icon {
+            font-size: 2rem;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #004d98 0%, #a50044 100%);">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-trophy-fill"></i> Lionel Messi
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#biografia">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#logros">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#galeria">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sección Inicio -->
+<section id="inicio" class="hero-section">
+    <div class="container text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" 
+             alt="Lionel Messi" 
+             class="rounded-circle mb-4" 
+             style="width: 200px; height: 200px; object-fit: cover; border: 4px solid white;">
+        <h1 class="display-3 mb-4">Lionel Andrés Messi</h1>
+        <p class="lead">El mejor futbolista de todos los tiempos | 7 veces ganador del Balón de Oro</p>
+        <p class="mb-4">Campeón del Mundo con Argentina (2022) | Máximo goleador histórico del FC Barcelona</p>
+        <div class="d-flex justify-content-center gap-3">
+            <span class="badge bg-light text-dark p-3"><i class="bi bi-trophy-fill text-warning"></i> 44 Títulos</span>
+            <span class="badge bg-light text-dark p-3"><i class="bi bi-balloon-heart-fill text-danger"></i> 800+ Goles</span>
+            <span class="badge bg-light text-dark p-3"><i class="bi bi-star-fill text-primary"></i> 7 Balones de Oro</span>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Biografía con Línea de Tiempo -->
+<section id="biografia" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Línea de Tiempo: La Historia de un Genio</h2>
+        
+        <!-- Línea de Tiempo -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="timeline-item">
+                    <span class="timeline-year">1987</span>
+                    <h4>Nacimiento</h4>
+                    <p>Nace el 24 de junio en Rosario, Argentina. Hijo de Jorge Messi y Celia Cuccittini.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2000</span>
+                    <h4>Llegada a Barcelona</h4>
+                    <p>Con 13 años, llega a España para unirse a las categorías inferiores del FC Barcelona. El club paga su tratamiento hormonal.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2004</span>
+                    <h4>Debut profesional</h4>
+                    <p>Debuta con el primer equipo del FC Barcelona el 16 de octubre, convirtiéndose en el jugador más joven en debutar en La Liga.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2009</span>
+                    <h4>Primer Balón de Oro</h4>
+                    <p>Gana su primer Balón de Oro y logra el sextete con el Barcelona (Liga, Copa, Champions, Supercopa de España, Supercopa de Europa, Mundial de Clubes).</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2012</span>
+                    <h4>Año histórico</h4>
+                    <p>Establece el récord de más goles en un año calendario con 91 goles, superando la marca de Gerd Müller.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2021</span>
+                    <h4>Salida del Barcelona y llegada al PSG</h4>
+                    <p>Después de 21 años, deja el FC Barcelona y ficha por el Paris Saint-Germain. Gana la Copa América con Argentina.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2022</span>
+                    <h4>Campeón del Mundo</h4>
+                    <p>Lidera a Argentina para ganar la Copa del Mundo en Qatar, siendo elegido el mejor jugador del torneo.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2023</span>
+                    <h4>Inter Miami</h4>
+                    <p>Ficha por el Inter Miami de la MLS, ganando la Leagues Cup y revolucionando el fútbol en Estados Unidos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estadísticas Rápidas -->
+<section class="py-4 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-trophy-fill trophy-icon"></i>
+                    <div class="stat-number">44</div>
+                    <div>Títulos Oficiales</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-star-fill trophy-icon" style="color: #004d98;"></i>
+                    <div class="stat-number">8</div>
+                    <div>Balones de Oro</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-balloon-heart-fill trophy-icon" style="color: #dc3545;"></i>
+                    <div class="stat-number">821</div>
+                    <div>Goles Oficiales</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-person-workspace trophy-icon" style="color: #198754;"></i>
+                    <div class="stat-number">350+</div>
+                    <div>Asistencias</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Logros -->
+<section id="logros" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Logros y Reconocimientos</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-star-fill text-warning fs-1 me-3"></i>
+                            <h5 class="card-title mb-0">Balones de Oro</h5>
+                        </div>
+                        <p class="card-text">Ganador de 7 Balones de Oro (2009, 2010, 2011, 2012, 2015, 2019, 2021) - Récord histórico</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-trophy-fill text-warning fs-1 me-3"></i>
+                            <h5 class="card-title mb-0">Títulos con Clubes</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>10 Ligas Españolas</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>4 Champions League</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>7 Copas del Rey</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>3 Mundiales de Clubes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-flag-fill text-primary fs-1 me-3"></i>
+                            <h5 class="card-title mb-0">Títulos con Argentina</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Copa del Mundo 2022</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Copa América 2021</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Finalissima 2022</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Medalla de Oro JJOO 2008</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-award-fill text-danger fs-1 me-3"></i>
+                            <h5 class="card-title mb-0">Premios Individuales</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>6 Botas de Oro</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>8 Pichichis de La Liga</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>2 Mejor Jugador de la UEFA</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Balón de Oro del Mundial 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-bar-chart-fill text-info fs-1 me-3"></i>
+                            <h5 class="card-title mb-0">Récords</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Máximo goleador histórico de La Liga</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Más goles en un año (91)</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Más goles con un solo club (672)</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Más Balones de Oro (8)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-heart-fill text-danger fs-1 me-3"></i>
+                            <h5 class="card-title mb-0">Reconocimientos</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Marca Leyenda</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Golden Foot</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Mejor Deportista Latino</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Premio Príncipe de Asturias</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Galería -->
+<section id="galeria" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Galería de Momentos Inolvidables</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card gallery-img">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Messi en Barcelona" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text text-center">Época dorada en el FC Barcelona</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card gallery-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDXznGbxHyYHM77IivGCZxxDk1JmPzkpDOg&s" class="card-img-top" alt="Messi con la Copa del Mundo" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text text-center">Campeón del Mundo 2022</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card gallery-img">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Messi celebrando" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text text-center">Celebrando un gol</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card gallery-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFGd45TDxQCXM8C4AnJMWV1Fi5-E9sptSbA&s" class="card-img-top" alt="Balón de Oro" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text text-center">Ganando su 8vo Balón de Oro</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card gallery-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7H7FXJaDgCn8SROrbgzbS2gmQ-tiExOXbg&s" class="card-img-top" alt="Messi con Argentina" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text text-center">Con la selección argentina</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card gallery-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvOHt7MarDa-dAdvl95I-r0Mf8Unteq6Ybg&s" class="card-img-top" alt="Messi en Miami" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text text-center">Nueva etapa en Inter Miami</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contacto y Redes Sociales</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Información de contacto</h5>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-envelope fs-4 text-primary me-3"></i>
+                            <div>
+                                <p class="mb-0">Email (representación)</p>
+                                <strong>management@leomessi.com</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-instagram fs-4 text-danger me-3"></i>
+                            <div>
+                                <p class="mb-0">Instagram</p>
+                                <strong>@leomessi</strong>
+                                <span class="badge bg-primary ms-2">504M seguidores</span>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-facebook fs-4 text-primary me-3"></i>
+                            <div>
+                                <p class="mb-0">Facebook</p>
+                                <strong>@leomessi</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-twitter-x fs-4 text-dark me-3"></i>
+                            <div>
+                                <p class="mb-0">Twitter/X</p>
+                                <strong>@leomessi</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-globe fs-4 text-success me-3"></i>
+                            <div>
+                                <p class="mb-0">Sitio web oficial</p>
+                                <strong>www.leomessi.com</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Fundación Leo Messi</h5>
+                        <p class="card-text">La Fundación Leo Messi trabaja para ayudar al acceso a la educación y la salud de los niños y jóvenes en situación de vulnerabilidad.</p>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-heart-fill text-danger fs-4 me-3"></i>
+                            <div>
+                                <p class="mb-0">Más información</p>
+                                <strong>www.fundacionleomessi.org</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h6>Patrocinadores oficiales:</h6>
+                            <div class="d-flex gap-3 mt-2">
+                                <span class="badge bg-dark p-2">Adidas</span>
+                                <span class="badge bg-primary p-2">Pepsi</span>
+                                <span class="badge bg-success p-2">Gatorade</span>
+                                <span class="badge bg-warning text-dark p-2">Lays</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-white py-4" style="background: linear-gradient(135deg, #004d98 0%, #a50044 100%);">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Lionel Messi - Página no oficial creada con fines educativos</p>
+        <p class="mb-0 small">Diseñada con Bootstrap 5.2 para actividad de desarrollo</p>
+        <div class="mt-2">
+            <i class="bi bi-trophy-fill me-2"></i>
+            <i class="bi bi-star-fill me-2"></i>
+            <i class="bi bi-balloon-heart-fill"></i>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap 5.2 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script para smooth scroll -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
